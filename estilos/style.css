@@ -1,0 +1,41 @@
+@charset "UTF-8";
+
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+html, body {
+    height: 100vh;/*faz algo cobrir a tela toda em height*/
+    width: 100vw;/*faz algo cobrir a tela toda em width*/
+    background-color: black;
+}
+
+body {
+    background: url('../imagens/fundo-madeira.jpg') no-repeat top center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+main {
+    position: relative;
+    height: 100vh;
+}
+
+/*deixe as caixas, contando com o body com cores no background para separar bem*/
+
+section#telefone {
+    position: absolute;
+    /*a posição absoluta permite que voce mude o top, left, right e bottom*/
+    top: 50%;
+    /*move o ponto esquerdo superior para 50% do topo pra baixo*/
+    left: 50%;
+    /*move o ponto esquerdo superior para 50% da esquerda para a direita*/
+    transform: translate(-50%, -50%);
+    /*-50% no top e no left(nesse caso)*/
+    height: 627px;
+    width: 311px;
+    /*Use o Gimp para ver o tamanho certo da imagem*/
+    background: url('../imagens/frame-iphone.png') no-repeat;
+}
