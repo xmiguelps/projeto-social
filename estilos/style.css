@@ -33,7 +33,7 @@ section#telefone {
     left: 50%;
     /*move o ponto esquerdo superior para 50% da esquerda para a direita*/
     transform: translate(-50%, -50%);
-    /*-50% no top e no left(nesse caso)*/
+    /*-50% no top e no left*/
     height: 627px;
     width: 311px;
     /*Use o Gimp para ver o tamanho certo da imagem*/
@@ -41,9 +41,29 @@ section#telefone {
 }
 
 iframe#tela {
+    /*Qunado quero só mudar a posição e não distanciar de algo, usa isso*/
     position: relative;
     top: 80px;
     left: 22px;
     width: 269px;
     height: 471px;
+}
+
+section#redes-sociais {
+    text-align: right;
+}
+
+section#redes-sociais img {
+    width: 50px;
+    margin: 10px;
+    border-radius: 50%;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.408);
+    box-sizing: border-box;/* tira a sensação de movimentação*/ 
+}
+
+section#redes-sociais img:hover {
+    transition: transform 0.2s, border 0.2s;/*voce escolhe para quem quer a transição e quanto tempo dura*/
+    border: 2px solid rgba(255, 255, 255, 0.647);/* da uma sensação de movimentação pois a borda ocupa espaço aparecendo e sumindo */
+    transform: translate(-3px, -3px);
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.562);
 }
