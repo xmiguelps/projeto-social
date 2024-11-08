@@ -20,7 +20,7 @@ body {
 
 main {
     position: relative;
-    height: 100vh;
+    height: 100vh; 
 }
 
 /*deixe as caixas, contando com o body com cores no background para separar bem*/
@@ -45,7 +45,7 @@ iframe#tela {
     position: relative;
     top: 80px;
     left: 22px;
-    width: 269px;
+    width: 267px;
     height: 471px;
 }
 
